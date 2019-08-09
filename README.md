@@ -1,24 +1,39 @@
-# README
+# Marios
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This program helps keep track of products and their reviews
 
-Things you may want to cover:
+#### By Abdellah Ramadan on August 9nd, 2019.
 
-* Ruby version
+## Description
 
-* System dependencies
+The website can be used to keep track of products and their reviews.
 
-* Configuration
+## Setup/Installation Requirements
 
-* Database creation
+* Clone this repo to your desktop.
+* Change directories in terminal to this project's folder.
+* Type `createdb marios` into the terminal. Then add this command `psql marios < database_backup.sql`.
+* Type `ruby app.rb` to run this project.
 
-* Database initialization
 
-* How to run the test suite
+## Known Bugs
 
-* Services (job queues, cache servers, search engines, etc.)
+There are no known bugs at this time.
 
-* Deployment instructions
+## Support and contact details
 
-* ...
+If you encounter any issues using this software or have comments please e-mail at:
+
+* Abdellah Ramadan: ajrmdn@gmail.com
+
+
+## Technologies Used
+
+* ruby
+* rails
+
+### License
+
+This software is license under the MIT license.
+
+Copyright (c) 2019 **by: Abdellah Ramadan**
