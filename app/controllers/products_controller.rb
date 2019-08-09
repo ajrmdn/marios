@@ -20,8 +20,6 @@ class ProductsController < ApplicationController
     end
   end
 
-  # Other controller methods go here.
-
   def edit
     @product = Product.find(params[:id])
     render :edit
