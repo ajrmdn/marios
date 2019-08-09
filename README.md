@@ -6,7 +6,7 @@ This program helps keep track of products and their reviews
 
 ## Description
 
-The website can be used to keep track of products and their reviews.
+The website can be used to keep track of mario's products and their reviews.
 
 ## Setup/Installation Requirements
 
@@ -16,9 +16,7 @@ The website can be used to keep track of products and their reviews.
 * Type `ruby app.rb` to run this project.
 
 
-## Known Bugs
 
-There are no known bugs at this time.
 
 ## Support and contact details
 
