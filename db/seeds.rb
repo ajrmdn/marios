@@ -8,7 +8,7 @@ Review.destroy_all
 end
 
 5.times do |i|
- Review.create!(author: Faker::TvShows::Seinfeld.character, content_body: Faker::TvShows::Seinfeld.quote,rating: Faker::Number.within(range: 1..5))
+ Review.create!(author: Faker::TvShows::Seinfeld.character, content_body: Faker::TvShows::,rating: Faker::Number.within(range: 1..5))
 end
 
 
