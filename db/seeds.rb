@@ -7,4 +7,9 @@ Review.destroy_all
  Product.create!(name: Faker::Food.product, cost: Faker::Number.between(from: 1, to: 100))
 end
 
-p "Created #{Product.count} products"
+5.times do |i|
+ Review.create!(author: Faker::TvShows::Seinfeld.character, content_body: Faker::TvShows::Seinfeld.quote,rating: Faker::Number.within(range: 1..5))
+end
+
+
+p "Created #{Product.count} products and #{Review.count} reviews"
