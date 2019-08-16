@@ -1,5 +1,11 @@
 <h1>Mario's Products</h1>
 
+<ul>
+<% @top.each do |t| %>
+  <li> <%= link_to t.name, product_path(t)%> </li>
+<% end %>
+</ul>
+
 <% if @products.any? %>
   <ul>
     <% @products.each do |product| %>
