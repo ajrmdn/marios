@@ -1,7 +1,8 @@
 class ProductsController < ApplicationController
 
   def index
-    @products = Product.all
+    @american_made = Product.america
+    @top = Product.three_most_recent
     render :index
   end
 
@@ -13,7 +14,7 @@ class ProductsController < ApplicationController
   def all
     @products = Product.all
     render :all
-  end  
+  end
 
   def create
     @product = Product.new(product_params)

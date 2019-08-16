@@ -8,7 +8,8 @@ class Product < ApplicationRecord
 
   before_save(:titleize_product)
 
-  scope :india, -> { where(country_of_origin: "India")}
+  scope :america, -> { where(country_of_origin: "America")}
+  scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
 
   private
     def titleize_product
