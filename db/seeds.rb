@@ -8,7 +8,7 @@ Review.destroy_all
 end
 
 5.times do |i|
- Review.create!(author: Faker::TvShows::.character, content_body: Faker::TvShows::,rating: Faker::Number.within(range: 1..5))
+ Review.create!(author: Faker::TvShows::TheOffice.character, content_body: Faker::TvShows::TheOffice.quote,rating: Faker::Number.within(range: 1..5))
 end
 
 
