@@ -4,11 +4,12 @@ Product.destroy_all
 Review.destroy_all
 
 50.times do |index|
- Product.create!(name: Faker::Food.product, cost: Faker::Number.between(from: 1, to: 100))
-end
+ product = Product.create!(name: Faker::Food.ingredient, cost: Faker::Number.between(from: 1, to: 100), country_of_origin: Faker::Address.country)
 
 5.times do |i|
- Review.create!(author: Faker::TvShows::TheOffice.character, content_body: Faker::TvShows::TheOffice.quote,rating: Faker::Number.within(range: 1..5))
+ product.reviews.create!(author: Faker::TvShows::NewGirl.character, content_body: Faker::TvShows::NewGirl.quote,rating: Faker::Number.within(range: 1..5))
+
+ end
 end
 
 

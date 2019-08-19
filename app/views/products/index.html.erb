@@ -1,5 +1,8 @@
 <h1>Mario's Products</h1>
 
+<h3> Top 3 Products made in U.S.A. </h3>
+
+
 <ul>
 <% @top.each do |t| %>
   <li> <%= link_to t.name, product_path(t)%> </li>

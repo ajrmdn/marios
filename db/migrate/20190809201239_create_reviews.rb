@@ -5,6 +5,8 @@ class CreateReviews < ActiveRecord::Migration[5.2]
       t.column(:content_body, :text)
       t.column(:rating, :integer)
 
+      t.belongs_to :product, foreign_key: true
+
       t.timestamps
     end
   end
