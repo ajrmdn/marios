@@ -11,11 +11,6 @@ class ProductsController < ApplicationController
     render :new
   end
 
-  def all
-    @products = Product.all
-    render :all
-  end
-
   def create
     @product = Product.new(product_params)
     if @product.save

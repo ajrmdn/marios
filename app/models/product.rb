@@ -12,8 +12,8 @@ class Product < ApplicationRecord
   scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
 
   scope :most_reviews, -> {(
-  select("products.id, products.name, products.cost, count(reviews.id) as reviews_count")  
-    )}
+    select("products.id, products.name, products.cost, count(reviews.id) as reviews_count")
+)}
 
   private
     def titleize_product
